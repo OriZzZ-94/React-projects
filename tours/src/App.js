@@ -32,30 +32,22 @@ function App() {
     );
     if (loading) {
         return ( < main >
-            <
-            Loading / >
-            <
-            /main>
+            <Loading / >
+            </main>
         );
     }
     if (tours.length === 0) {
         return ( < main >
-            <
-            div className = "title" >
-            <
-            h2 > no tours < /h2> <
-            button className = 'btn'
-            onClick = {
-                () => window.location.reload()
-            } > Refresh The Page < /button> < /
-            div > <
-            /main>
+            <div className = "title" >
+            <h2 > no tours </h2> 
+            <button className = 'btn' onClick = {() => window.location.reload()} > Refresh The Page </button> 
+            </div > 
+            </main>
         );
     }
-    return <main > < Tours tours = { tours }
-    removeTour = { removeTour }
-    /> < /
-    main > ;
+    return <main> 
+    < Tours tours = { tours }removeTour = { removeTour }/>  
+    </main > ;
 }
 
 export default App
